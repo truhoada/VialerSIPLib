@@ -128,7 +128,6 @@
 		C49B2C3A1DF9B9CB000FFBF7 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		C4A5C09D1E3640CF008F5297 /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../Documentation/CONTRIBUTING.md; sourceTree = "<group>"; };
 		C4A5C09F1E364121008F5297 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = ISSUE_TEMPLATE.md; path = ../.github/ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
-		C4A6D7661D5A12720014A4FB /* Keys.swift.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Keys.swift.example; sourceTree = "<group>"; };
 		EDD7E6A0D9160F0800D3A0F0 /* libPods-VialerSIPLib_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VialerSIPLib_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE79A6C41E2CFC0E00AC4AC7 /* VSLEndOfCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSLEndOfCallViewController.swift; sourceTree = "<group>"; };
 		EEF1CB7C1FA096F800B5170F /* VialerSIPLib_Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VialerSIPLib_Example-Prefix.pch"; sourceTree = "<group>"; };
@@ -317,7 +316,6 @@
 			children = (
 				C48B488D1D421CB100AB2875 /* SipUser.swift */,
 				C4021B6A1D426F22003560F6 /* Keys.swift */,
-				C4A6D7661D5A12720014A4FB /* Keys.swift.example */,
 				C4441B701D424F8100C98E49 /* DDLogWrapper.h */,
 				C4441B711D424F8100C98E49 /* DDLogWrapper.m */,
 			);
@@ -452,7 +450,7 @@
 				ORGANIZATIONNAME = Harold;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = E2Q9UE8HM6;
+						DevelopmentTeam = 9H45XEW7X9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -467,7 +465,7 @@
 					};
 					F271B54A1DABD18F0028D620 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E2Q9UE8HM6;
+						DevelopmentTeam = 9H45XEW7X9;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -801,7 +799,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = 9H45XEW7X9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/VialerSIPLib/Info.plist";
@@ -827,7 +825,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = 9H45XEW7X9;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/VialerSIPLib/Info.plist";
@@ -890,7 +888,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = 9H45XEW7X9;
 				INFOPLIST_FILE = IntentsExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -915,7 +913,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = E2Q9UE8HM6;
+				DEVELOPMENT_TEAM = 9H45XEW7X9;
 				INFOPLIST_FILE = IntentsExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
