@@ -897,7 +897,7 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
     return desc;
 }
 
-- (void)displayWindow:(UIView *_Nonnull)parent {
+- (void) displayWindowWithCompletion:(void (^)(UIView * _Nullable))completion {
     //#if PJSUA_HAS_VIDEO
     
     int vid_idx;
@@ -910,11 +910,16 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
         wid = ci.media[vid_idx].stream.vid.win_in;
         
         pjsua_vid_win_info wi;
+        if (wid == PJSUA_INVALID_ID) {
+            printf("PJSUA_INVALID_ID");
+            return;
+        }
+        
         if (pjsua_vid_win_get_info(wid, &wi) == PJ_SUCCESS) {
             UIView *view = (__bridge UIView *)wi.hwnd.info.ios.window;
-            
+
             dispatch_async(dispatch_get_main_queue(), ^{
-                [parent addSubview:view];
+                completion(view);
             });
         }
     }
