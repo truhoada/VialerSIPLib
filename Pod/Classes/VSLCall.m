@@ -897,16 +897,16 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
     return desc;
 }
 
-- (void) displayWindow: (UIView *) parent {
+- (void)displayWindow:(UIView *_Nonnull)parent {
     //#if PJSUA_HAS_VIDEO
     
     int vid_idx;
     pjsua_vid_win_id wid;
     
-    vid_idx = pjsua_call_get_vid_stream_idx(self.callId);
+    vid_idx = pjsua_call_get_vid_stream_idx((int)self.callId);
     if (vid_idx >= 0) {
         pjsua_call_info ci;
-        pjsua_call_get_info(self.callId, &ci);
+        pjsua_call_get_info((int)self.callId, &ci);
         wid = ci.media[vid_idx].stream.vid.win_in;
         
         pjsua_vid_win_info wi;
