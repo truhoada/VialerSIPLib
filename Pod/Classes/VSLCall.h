@@ -3,7 +3,7 @@
 //  Copyright © 2015 Devhouse Spindle. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "VSLAccount.h"
 #import "VSLCallStats.h"
 #import <VialerPJSIP/pjsua.h>
@@ -521,6 +521,6 @@ typedef NS_ENUM(NSInteger, VSLCallTerminateReason) {
 
 + (NSDictionary *)getCallerInfoFromRemoteUri:(NSString *)string;
 
-- (void) displayWindow: (UIView *) parent;
+- (void)displayWindow:(UIView *_Nonnull)parent;
 
 @end
