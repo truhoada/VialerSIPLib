@@ -10,7 +10,7 @@ PODS:
   - SPLumberjackLogFormatter (0.0.1):
     - CocoaLumberjack
   - Vialer-pjsip-iOS (3.5)
-  - VialerSIPLib (3.6.0):
+  - VialerSIPLib (3.7.3):
     - CocoaLumberjack
     - Reachability
     - Vialer-pjsip-iOS
@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
   - OCMock
   - SPLumberjackLogFormatter (from `https://github.com/VoIPGRID/SPLumberjackLogFormatter.git`)
-  - VialerSIPLib (from `https://github.com/truhoada/VialerSIPLib.git`, commit `ac2b210198264fcd61f199cfcfb854fbd4cdd613`)
+  - VialerSIPLib (from `https://github.com/truhoada/VialerSIPLib.git`, branch `trunghd/build`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
   SPLumberjackLogFormatter:
     :git: https://github.com/VoIPGRID/SPLumberjackLogFormatter.git
   VialerSIPLib:
-    :commit: ac2b210198264fcd61f199cfcfb854fbd4cdd613
+    :branch: trunghd/build
     :git: https://github.com/truhoada/VialerSIPLib.git
 
 CHECKOUT OPTIONS:
@@ -40,7 +40,7 @@ CHECKOUT OPTIONS:
     :commit: c0155bfd953746f13e94c84b8b2c13908242e3e4
     :git: https://github.com/VoIPGRID/SPLumberjackLogFormatter.git
   VialerSIPLib:
-    :commit: ac2b210198264fcd61f199cfcfb854fbd4cdd613
+    :commit: d485d7dbe0c5b1af7dd7ae14e2ac0e1782243427
     :git: https://github.com/truhoada/VialerSIPLib.git
 
 SPEC CHECKSUMS:
@@ -49,8 +49,8 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SPLumberjackLogFormatter: a2290c9b880f3166b2d1bace45dc1fc1302b28ab
   Vialer-pjsip-iOS: 5ceea9f0e46a7748b2542ba04ca7dacf4de4b51c
-  VialerSIPLib: 385678b639e18fbc321619fecdf8e81e0a542960
+  VialerSIPLib: b77fc823dd1dc4581a25510ef73ba044a2849bb3
 
-PODFILE CHECKSUM: bf5ff64b6d0385bad4027ec5ea31673c15bbdb45
+PODFILE CHECKSUM: dce62cb275e05f473bec43cb2c67b13b6717e833
 
 COCOAPODS: 1.10.0

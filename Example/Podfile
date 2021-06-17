@@ -3,7 +3,7 @@ platform :ios, '10.0'
 
 def pods_for_all_targets
     pod 'VialerSIPLib', :git => 'https://github.com/truhoada/VialerSIPLib.git',
-    :commit => 'ac2b210198264fcd61f199cfcfb854fbd4cdd613'
+    :branch => 'trunghd/build'
 end
 
 target 'VialerSIPLib_Example' do
