@@ -521,6 +521,6 @@ typedef NS_ENUM(NSInteger, VSLCallTerminateReason) {
 
 + (NSDictionary *)getCallerInfoFromRemoteUri:(NSString *)string;
 
-- (void)displayWindow:(UIView *_Nonnull)parent;
+- (void) displayWindowWithCompletion:(void (^)(UIView * _Nullable))completion;
 
 @end
