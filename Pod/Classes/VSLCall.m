@@ -96,7 +96,7 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
 
 - (instancetype)initOutboundCallWithNumberToCall:(NSString *)number account:(VSLAccount *)account {
     if (self = [self initPrivateWithAccount:account]) {
-        self.numberToCall = [VialerUtils cleanPhoneNumber:number];
+        self.numberToCall = number;
     }
     return self;
 }
@@ -109,7 +109,7 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
 
 - (instancetype _Nullable)initInboundCallWithUUID:(NSUUID * _Nonnull)uuid number:(NSString * _Nonnull)number name:(NSString * _Nonnull)name {
     self.uuid = uuid;
-    self.callerNumber = [VialerUtils cleanPhoneNumber:number];
+    self.callerNumber = number;
     self.incoming = YES;
     self.callerName = name;
     return self;
@@ -296,7 +296,7 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
 }
 
 - (BOOL)blindTransferCallWithNumber:(NSString *)number {
-    NSString *cleanedNumber = [VialerUtils cleanPhoneNumber:number];
+    NSString *cleanedNumber = number;
 
     if ([cleanedNumber isEqualToString:@""]) {
         return NO;
