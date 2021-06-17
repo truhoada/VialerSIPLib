@@ -77,7 +77,8 @@ class VSLCallViewController: UIViewController, VSLKeypadViewControllerDelegate {
     @IBOutlet weak var holdButton: UIButton!
     @IBOutlet weak var hangupButton: UIButton!
     @IBOutlet weak var keypadButton: UIButton!
-
+    @IBOutlet weak var videoView: UIView!
+    
     // MARK: - Actions
 
     @IBAction func hangupButtonPressed(_ sender: UIButton) {
@@ -224,6 +225,19 @@ class VSLCallViewController: UIViewController, VSLKeypadViewControllerDelegate {
             speakerButton?.setTitle("Audio", for: UIControlState())
         } else {
             speakerButton?.setTitle(callManager.audioController.output == .speaker ? "On Speaker" : "Speaker", for: UIControlState())
+        }
+        
+        call.displayWindow { [weak self] streamView in
+            guard let self = self, let streamView = streamView else { return }
+            streamView.contentMode = .scaleAspectFit
+            self.videoView.addSubview(streamView)
+            streamView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                streamView.topAnchor.constraint(equalTo: self.videoView.topAnchor),
+                streamView.leftAnchor.constraint(equalTo: self.videoView.leftAnchor),
+                streamView.bottomAnchor.constraint(equalTo: self.videoView.bottomAnchor),
+                streamView.rightAnchor.constraint(equalTo: self.videoView.rightAnchor),
+            ])
         }
     }
 
