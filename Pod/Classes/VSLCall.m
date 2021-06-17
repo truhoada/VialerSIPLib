@@ -897,4 +897,27 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
     return desc;
 }
 
+- (void) displayWindow: (UIView *) parent {
+    //#if PJSUA_HAS_VIDEO
+    
+    int vid_idx;
+    pjsua_vid_win_id wid;
+    
+    vid_idx = pjsua_call_get_vid_stream_idx(self.callId);
+    if (vid_idx >= 0) {
+        pjsua_call_info ci;
+        pjsua_call_get_info(self.callId, &ci);
+        wid = ci.media[vid_idx].stream.vid.win_in;
+        
+        pjsua_vid_win_info wi;
+        if (pjsua_vid_win_get_info(wid, &wi) == PJ_SUCCESS) {
+            UIView *view = (__bridge UIView *)wi.hwnd.info.ios.window;
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [parent addSubview:view];
+            });
+        }
+    }
+}
+
 @end

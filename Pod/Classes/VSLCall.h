@@ -520,4 +520,7 @@ typedef NS_ENUM(NSInteger, VSLCallTerminateReason) {
 - (void)update;
 
 + (NSDictionary *)getCallerInfoFromRemoteUri:(NSString *)string;
+
+- (void) displayWindow: (UIView *) parent;
+
 @end
