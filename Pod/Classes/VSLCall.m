@@ -178,9 +178,9 @@ NSString * const VSLCallErrorDuringSetupCallNotification = @"VSLCallErrorDuringS
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:VSLAudioControllerAudioResumed object:nil];
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:VSLAudioControllerAudioInterrupted object:nil];
 
-                if (self.connected && !self.userDidHangUp) {
+//                if (self.connected && !self.userDidHangUp) {
                     [self.disconnectedSoundPlayer play];
-                }
+//                }
             } break;
         }
         [self didChangeValueForKey:stringFromCallStateProperty];
